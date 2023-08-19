@@ -4,6 +4,7 @@
 
 By trying to follow these code practices, the team can achieve benefits such as improved code readability, enhanced maintainability, increased code reusability, better collaboration, higher code quality, and overall improved software reliability and performance.Therefore, it is highly recommended to kindly follow these practices when writing code in order to maximize these advantages and deliver high-quality software solutions.
 
+- **You can install [nodejs app at](https://github.com/eDigits/FilesTemplatesGenerator) for generating blueprints for different script types.**
 - **Utilize the [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension for code formatting.**
 - **Ensure that all function names adhere to the lower camel case convention.**
 - **Avoid using single characters as variable names.**
