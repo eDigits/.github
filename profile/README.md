@@ -11,7 +11,7 @@ To streamline the process, consider utilizing a [Node.js application for generat
 📝 **Naming Conventions:**
 
 - All function,variables names should adhere to the lower camel case convention. 🐪
-- Constant variable’ names are capital
+- Const, all in CAPS
 - Avoid using single characters as variable names. 🚫
 - Clearly indicate the data type and description within variable names. 📊
 
