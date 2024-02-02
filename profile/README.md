@@ -1,47 +1,77 @@
-# EDC Tech Team 💻🚀
+# 📋Coding Standards
 
-## **Code Practices 🚥**
+✨ **Coding Best Practices 🚀**
 
-By trying to follow these code practices, the team can achieve benefits such as improved code readability, enhanced maintainability, increased code reusability, better collaboration, higher code quality, and overall improved software reliability and performance.Therefore, it is highly recommended to kindly follow these practices when writing code in order to maximize these advantages and deliver high-quality software solutions.
+- Adhering to these coding practices is crucial for our team to reap numerous benefits, including heightened code readability, improved maintainability, increased code reusability, better collaboration, elevated code quality, and an overall enhancement in software reliability and performance. 💻✨
 
-- **You can install [nodejs app at](https://github.com/eDigits/FilesTemplatesGenerator) for generating blueprints for different script types.**
-- **Utilize the [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension for code formatting.**
-- **Ensure that all function names adhere to the lower camel case convention.**
-- **Avoid using single characters as variable names.**
-- **Assign variable names that indicate the data type and describe the data stored within them. For instance:**
-    - **String variables should be prefixed with "st," such as stTitle.**
-    - **Integer variables should be prefixed with "int," such as intTotalCount.**
-    - **Float variables should be prefixed with "fl," such as flPrice.**
-    - **Boolean variables should be prefixed with "b," such as bIsDone.**
-    - **Array variables should be prefixed with "arr," such as arrPhoneCalls.**
-    - **Object variables should be prefixed with "Obj," such as ObjNewPet.**
-    - **Record variables should be prefixed with "rec," such as recCustomer.**
-    - **Date variables should be prefixed with "dt," such as dtFirstBillingDate.**
-- **Utilize SuiteScript 2.1 instead of SuiteScript 2.0 or
-SuiteScript 2.x, employing "let" or "const" declarations and avoiding
-the usage of "var."**
-- **When writing SuiteScript code for multiple accounts, consider following the recommended filename convention: <Company
-Name/Abbreviation>*<Script Type>*<Requirement Description>.js. For example, EDC_CS_SetTaxable.js.**
+To streamline the process, consider utilizing a [Node.js application for generating blueprints](https://github.com/eDigits/FilesTemplatesGenerator) tailored to different script types. Additionally, employ the Prettier - Code formatter extension to ensure consistent code formatting throughout the development process. 🛠️
+
+### **Key Practices to Incorporate 🌟**
+
+📝 **Naming Conventions:**
+
+- All function,variables names should adhere to the lower camel case convention. 🐪
+- Constant variable’ names are capital
+- Avoid using single characters as variable names. 🚫
+- Clearly indicate the data type and description within variable names. 📊
+
+🔠 **Variable Prefixes:**
+
+- String variables: Prefix with "string," e.g., stringTitle. 🏷️
+- Integer variables: Prefix with "int," e.g., intTotalCount. 🧮
+- Float variables: Prefix with "float," e.g., floatPrice. 🌊
+- Boolean variables: Prefix with "bool," e.g., boolIsDone. 💡
+- Array variables: Prefix with "arr," e.g., arrPhoneCalls. 📦
+- Object variables: Prefix with "Obj," e.g., ObjNewPet. 🧸
+- Record variables: Prefix with "record," e.g., recordCustomer. 🗃️
+- Date variables: Prefix with "date," e.g., dateFirstBillingDate. 📅
+
+📘 **SuiteScript Guidelines:**
+
+- Utilize SuiteScript 2.1, employing "let" or "const" declarations and avoiding the usage of "var." 🚀
+- Follow a recommended filename convention for multi-account SuiteScript code. 📝
     
-    The suggested Script Types are as follows:
+    📑 **Script Types and Naming Conventions:**
     
-    - **CS – Client Scripts**
-    - **UE – User Events**
-    - **SL – Suitelet**
-    - **RL – RESTlet**
-    - **PL – Portlet**
-    - **SC – Scheduled**
-    - **MR – Map/Reduce**
-    - **Gl – SuiteGL**
-    - **WA – Workflow Action**
-    - **MU – Mass Update**
-    - **BI – Bundle Installation**
-- **Enclose your functions within try-catch blocks.**
-- **Avoid hard-coding URL links; instead, utilize the N/url module to construct URLs.**
-- **Ensure that log messages in the script convey meaningful
-business information, including record ID, record type, and other
-relevant details. Each log message should provide a clear understanding
-of the script's intended functionality.**
-- **Log important steps in each script as Audit entries.**
-- **Thorough logging enhances code readability and facilitates effective issue and error debugging.**
-- **Break down your code into reusable modules and functions to promote code organization, maintainability, and reusability**
+    - Consider the recommended filename convention: <Company Name/Abbreviation><Script Type>.js. 📂
+    - The name after the script type will follow PascalCase
+    - Suggested Script Types 📜:
+        - Client Script ➔ (CS) 🔧
+        - User Event Script ➔ (UE) 🔄
+        - Suitelet Script ➔ (SL) 📑
+        - Restlet Script ➔ (RL) 🌐
+        - Portlet Script ➔ (PL) 🖼️
+        - Scheduled Script ➔ (SC) 🗓️
+        - MapReduce Script ➔ (MR) 🗺️
+        - GL Plugin ➔ (GL) 💡
+        - Workflow Action ➔ (WA) 🔄
+        - Mass Update Script ➔ (MU) 🔄
+        - Bundle Installation ➔ (BI) 📦
+    - For instance, use EDC-CS-SetTaxable.js. 🌐
+- Use descriptive script IDs and deployments IDs. No more customscript1 and customdeploy1.🆔
+
+🚨 **Error Handling:**
+
+- Enclose functions within try-catch blocks for effective error handling. 🚧
+
+🌐 **URL Handling:**
+
+- Avoid hard-coding URL links; instead, utilize the N/url module to construct URLs. 🔗
+
+📢 **Logging Best Practices:**
+
+- Ensure log messages convey meaningful business information, including record ID, record type, and other relevant details. 📋
+- Log important steps in each script as Audit entries for comprehensive debugging. 🚦
+- You can Use the logger function added by the NodeJS generator
+
+📦 **Code Organization:**
+
+- Break down your code into reusable modules and functions to enhance organization, maintainability, and reusability. 🧩
+- Craft a brief script description at the start of the file within JSDocs 📝
+
+🛠️ **Linting and Formatting:**
+
+- Incorporate [Prettier](https://prettier.io/) for code formatting.
+- Install the Prettier extension in VSCode and configure it globally to auto-format on saving.
+
+By integrating these practices, our team will not only produce cleaner and more efficient code but will also establish a foundation for streamlined collaboration and robust software development. Regularly revisit and refine these practices based on evolving project requirements and emerging best practices in Netsuite development. 🚀🌟
